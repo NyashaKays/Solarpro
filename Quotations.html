@@ -1,0 +1,448 @@
+<!--
+    Website Designed and developed by Insignia
+    Name: INSIGNIA
+    phone: +263 71 602 7115
+    website: www.insignia.co.zw
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solarpro | Get A Quote!</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="assets/js/main.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="to-top">
+      <i class="fa-solid fa-square-caret-up"></i>
+    </div>
+    <header id="head">
+      <img
+        src="assets/images/Asset 1@4xw.png"
+        alt="Solarpro logo"
+        class="logo"
+      />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="why-us.html">Why Solarpro</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="solar-center.html">Solar Shop</a></li>
+          <li><a href="https://help.solarpro.co.zw/">Support</a></li>
+          <div class="btns">
+            <a href="Quotations.html" class="button">Get Quote</a>
+            <a href="contact.html" id="contact-btn" class="button"
+              >Contact Us</a
+            >
+          </div>
+        </ul>
+      </nav>
+      <!--Hamburger-->
+      <button id="menuToggle" class="hamburger">
+        <!--
+        A fake / hidden checkbox is used as click receiver,
+        so you can use the :checked selector on it.
+        -->
+        <input onclick="menu()" id="menu-btn" type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <!--mobile nav-->
+    <div id="mobile-nav" class="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why-us.html">Why Solarpro</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="solar-center.html">Solar Shop</a></li>
+        <li><a href="https://help.solarpro.co.zw/">Support</a></li>
+        <div class="btns">
+          <a href="Quotations.html" class="button">Get Quote</a>
+          <a href="contact.html" id="contact-btn" class="button">Contact Us</a>
+        </div>
+      </ul>
+    </div>
+
+    <main>
+      <!--contacts-->
+      <section id="quotations" class="contacts">
+        <div class="contact">
+          <h1>Get A Quote!</h1>
+          <h6>
+            At Solarpro theres no need to wait for a quote you can choose the
+            system you want to buy/rent and the time period and our system will
+            autogenerate a quote for you.
+          </h6>
+        </div>
+      </section>
+      <!--Form-->
+      <section class="Enquiries">
+        <div id="enquiry" class="enquire">
+          <h2>Generate A Quote</h2>
+          <div class="form-container">
+            <h1>Solar Pro Finance Calculator</h1>
+
+            <form id="financeForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" required /><br /><br />
+
+              <label for="address">Address:</label>
+              <input type="text" id="address" required /><br /><br />
+
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" required /><br /><br />
+
+              <label for="system">Select System:</label>
+              <select id="system" required>
+                <option value="1kva /1.024kwh/ 160w Powerbank 1 yr DIY">
+                  1kva /1.024kwh/ 160w Powerbank 1 yr DIY
+                </option>
+                <option value="3kva / 2.71kwh / 880w Single Phase 3yr">
+                  3kva / 2.71kwh / 880w Single Phase 3yr
+                </option>
+                <option value="3kva / 2.71kwh / 1760w Single Phase 3yr">
+                  3kva / 2.71kwh / 1760w Single Phase 3yr
+                </option>
+                <option value="3kva / 5.43kwh / 1760w Single Phase 3yr">
+                  3kva / 5.43kwh / 1760w Single Phase 3yr
+                </option>
+                <option value="5kva / 5.43kwh / 1760w Single Phase 3yr">
+                  5kva / 5.43kwh / 1760w Single Phase 3yr
+                </option>
+                <option value="5kva / 5.43kwh / 2640w Single Phase 3 yr">
+                  5kva / 5.43kwh / 2640w Single Phase 3 yr
+                </option>
+                <option value="5kva / 10.86kwh / 3520w Single Phase 3yr">
+                  5kva / 10.86kwh / 3520w Single Phase 3yr
+                </option>
+                <option value="5kva/8kwh/4400w HV Single Phase 5yr">
+                  5kva/8kwh/4400w HV Single Phase 5yr
+                </option>
+                <option value="6kva/10kwh/6600w HV Single phase 5yr">
+                  6kva/10kwh/6600w HV Single phase 5yr
+                </option>
+                <option value="10kva/20kwh/11000w HV Single phase 5yr">
+                  10kva/20kwh/11000w HV Single phase 5yr
+                </option>
+                <option value="5kva 3ph / 10kwh / 5280w Premium HV 10yr">
+                  5kva 3ph / 10kwh / 5280w Premium HV 10yr
+                </option>
+                <option value="6kva 3ph / 13kwh / 6160w Premium HV 10yr">
+                  6kva 3ph / 13kwh / 6160w Premium HV 10yr
+                </option>
+                <option value="8kva 3ph / 16kwh / 7920w Premium HV 10yr">
+                  8kva 3ph / 16kwh / 7920w Premium HV 10yr
+                </option>
+                <option value="10kva 3ph / 20kwh / 9680w Premium HV 10yr">
+                  10kva 3ph / 20kwh / 9680w Premium HV 10yr
+                </option>
+                <option value="12kva 3ph / 32kwh / 12320w Premium HV 10yr">
+                  12kva 3ph / 32kwh / 12320w Premium HV 10yr
+                </option>
+                <option value="15kva 3ph / 48kwh / 14,080w Premium HV 10yr">
+                  15kva 3ph / 48kwh / 14,080w Premium HV 10yr
+                </option>
+                <option value="20kva 3ph / 48kwh / 17,600w Premium HV 10yr">
+                  20kva 3ph / 48kwh / 17,600w Premium HV 10yr
+                </option>
+                <option value="25kva/48kwh/19000w HV TP Premium HV 10yr">
+                  25kva/48kwh/19000w HV TP Premium HV 10yr
+                </option>
+                <option value="50kva/96kwh/38000w HV TP Premium HV 10yr">
+                  50kva/96kwh/38000w HV TP Premium HV 10yr
+                </option>
+                <option value="100kva/192kwh/76000w HV TP Premium HV 10yr">
+                  100kva/192kwh/76000w HV TP Premium HV 10yr
+                </option>
+                <option value="10kva / 10.86kwh / 4400w Single Phase 3yr">
+                  10kva / 10.86kwh / 4400w Single Phase 3yr
+                </option>
+                <option value="10kva / 21.72kwh / 4750w Single Phase 3yr">
+                  10kva / 21.72kwh / 4750w Single Phase 3yr
+                </option>
+                <option value="10kva / 21.72kwh / 8800w Single Phase 3yr">
+                  10kva / 21.72kwh / 8800w Single Phase 3yr
+                </option>
+                <option value="12kva 3ph / 21.72kwh / 9240w Single Phase 5 yr">
+                  12kva 3ph / 21.72kwh / 9240w Single Phase 5 yr
+                </option></select
+              ><br /><br />
+
+              <label>Payment Period:</label><br />
+              <input
+                type="radio"
+                name="paymentPeriod"
+                id="months3"
+                value="2"
+                required
+              />
+              3 months
+              <input type="radio" name="paymentPeriod" id="months6" value="3" />
+              6 months
+              <input type="radio" name="paymentPeriod" id="months9" value="4" />
+              9 months
+              <input
+                type="radio"
+                name="paymentPeriod"
+                id="months12"
+                value="5"
+              />
+              12 months<br /><br />
+
+              <button type="button" onclick="calculate()">Calculate</button>
+            </form>
+
+            <h2>Calculation Results:</h2>
+            <div id="results"></div>
+            <br />
+
+            <button id="#applyNow" onclick="applyNow()">Apply Now</button>
+          </div>
+        </div>
+      </section>
+      <script>
+        function calculate() {
+          // Get the selected system and payment period radio buttons
+          const selectedSystem = document.getElementById("system").value;
+          const selectedPeriod = document.querySelector(
+            'input[name="paymentPeriod"]:checked'
+          );
+
+          // Validate other required fields
+          const name = document.getElementById("name").value;
+          const address = document.getElementById("address").value;
+          const phone = document.getElementById("phone").value;
+
+          if (!name || !address || !phone || !selectedPeriod) {
+            alert(
+              "Please fill in all required fields and select a payment period."
+            );
+            return false; // Prevent form submission
+          }
+
+          const months = parseInt(selectedPeriod.value, 10); // Convert the value to an integer
+
+          // Define the price data for the selected system
+          const systemPrices = {
+            "1kva /1.024kwh/ 160w Powerbank 1 yr DIY": [
+              690, 345, 125.21, 67.71, 48.54, 39.1,
+            ],
+            "3kva / 2.71kwh / 880w Single Phase 3yr": [
+              1850, 555, 469.98, 254.15, 182.21, 146.77,
+            ],
+            "3kva / 2.71kwh / 1760w Single Phase 3yr": [
+              2300, 690, 584.31, 315.97, 226.53, 182.47,
+            ],
+            "3kva / 5.43kwh / 1760w Single Phase 3yr": [
+              2850, 855, 724.03, 391.53, 280.7, 226.1,
+            ],
+            "5kva / 5.43kwh / 1760w Single Phase 3yr": [
+              3150, 945, 800.24, 432.74, 310.24, 249.9,
+            ],
+            "5kva / 5.43kwh / 2640w Single Phase 3 yr": [
+              3260, 978, 791.52, 447.86, 321.08, 258.63,
+            ],
+            "5kva / 10.86kwh / 3520w Single Phase 3yr": [
+              5500, 1650, 1397.25, 755.58, 541.7, 436.33,
+            ],
+            "5kva/8kwh/4400w HV Single Phase 5yr": [
+              5510, 1653, 1399.79, 756.96, 542.68, 437.13,
+            ],
+            "6kva/10kwh/6600w HV Single phase 5yr": [
+              7850, 2355, 1994.26, 1078.43, 773.15, 622.77,
+            ],
+            "10kva/20kwh/11000w HV Single phase 5yr": [
+              12350, 3705, 3137.46, 1696.63, 1216.35, 979.77,
+            ],
+            "5kva 3ph / 10kwh / 5280w Premium HV 10yr": [
+              8660, 2598, 2200.04, 1189.7, 852.92, 687.03,
+            ],
+            "6kva 3ph / 13kwh / 6160w Premium HV 10yr": [
+              9490, 2847, 2410.89, 1303.73, 934.67, 752.87,
+            ],
+            "8kva 3ph / 16kwh / 7920w Premium HV 10yr": [
+              10850, 3255, 2756.4, 1490.56, 1068.62, 860.77,
+            ],
+            "10kva 3ph / 20kwh / 9680w Premium HV 10yr": [
+              15180, 4554, 3856.41, 2085.41, 1495.08, 1204.28,
+            ],
+            "12kva 3ph / 32kwh / 12320w Premium HV 10yr": [
+              18050, 5415, 4585.52, 2479.69, 1777.75, 1431.97,
+            ],
+            "15kva 3ph / 48kwh / 14,080w Premium HV 10yr": [
+              21370, 6411, 5428.96, 2935.79, 2104.73, 1695.35,
+            ],
+            "20kva 3ph / 48kwh / 17,600w Premium HV 10yr": [
+              23500, 7050, 5925.96, 3184.29, 2270.4, 1819.6,
+            ],
+            "25kva/48kwh/19000w HV TP Premium HV 10yr": [
+              25500, 7650, 6224.12, 3365.79, 2413.01, 1943.67,
+            ],
+            "50kva/96kwh/38000w HV TP Premium HV 10yr": [
+              48550, 14565, 12333.92, 6669.75, 4781.69, 3851.63,
+            ],
+            "100kva/192kwh/76000w HV TP Premium HV 10yr": [
+              97500, 29250, 24769.45, 13394.45, 9602.79, 7735.0,
+            ],
+            "10kva / 10.86kwh / 4400w Single Phase 3yr": [
+              6250, 1875, 1587.79, 858.62, 615.56, 495.83,
+            ],
+            "10kva / 21.72kwh / 4750w Single Phase 3yr": [
+              8850, 2655, 2248.3, 1215.8, 871.64, 702.1,
+            ],
+            "10kva / 21.72kwh / 8800w Single Phase 3yr": [
+              12320, 3696, 3129.84, 1692.51, 1213.4, 977.39,
+            ],
+            "12kva 3ph / 21.72kwh / 9240w Single Phase 5 yr": [
+              13500, 4050, 3429.62, 1854.62, 1329.62, 1071.0,
+            ],
+          };
+
+          // Calculate the values based on the selected system and payment period
+          const cashPrice = systemPrices[selectedSystem][0];
+          const deposit = systemPrices[selectedSystem][1];
+          const savings = cashPrice - deposit;
+
+          const selectedPeriodPrice = systemPrices[selectedSystem][months];
+
+          // Update the results div with the calculated values
+          let resultsDiv = document.getElementById("results");
+          resultsDiv.innerHTML = `
+                <p class="result-item">Selected System: ${selectedSystem}</p>
+                <p class="result-item">Cash Price: US$${cashPrice}</p>
+                <p class="result-item">Deposit: US$${deposit}</p>
+                <p class="result-item">Savings: US$${savings}</p>
+                <p class="result-item">To be paid per month for the next ${months} months: US$${selectedPeriodPrice}</p>
+            `;
+          return false; // Prevent form submission
+        }
+
+        function applyNow() {
+          // Add your logic to send an email or perform the desired action
+          alert("Application submitted! We will contact you shortly.");
+        }
+      </script>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <div class="newsletter">
+        <div class="input">
+          <span
+            ><i class="fa-solid fa-envelope"></i> Stay up to date with the
+            latest at Solarpro</span
+          >
+          <form action="#">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <input type="submit" value="Subscribe" class="btn" />
+          </form>
+        </div>
+        <div class="footy-logo">
+          <img
+            src="assets/images/Solar pro White.png"
+            alt="solarpro logo"
+            class="logo"
+          />
+        </div>
+      </div>
+      <div class="footy-info">
+        <div class="socials">
+          <h6>Solapro</h6>
+          <div class="links">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/techhubharare"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/techhubharare/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/HarareHub"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://wa.me/263718924393"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="info">
+          <span>Home</span>
+          <ul>
+            <p><a href="#about">About Us</a></p>
+            <p><a href="why-us.html">Why Solarpro?</a></p>
+            <p><a href="https://help.solarpro.co.zw/">Support</a></p>
+            <p>
+              <a href="https://mysolarpro.glide.page/dl/a400f7">My Solarpro</a>
+            </p>
+          </ul>
+        </div>
+        <div class="info">
+          <span>Contact Us</span>
+          <ul>
+            <p>Solarprozimbabwe@brieftech.co.zw</p>
+            <p>+263 71 892 4393</p>
+            <p><a href="https://wa.me/263718924393">Whatsapp Chat</a></p>
+            <p>
+              Solarpro Shop, <br />
+              Shop no.1 SSC Building <br />
+              Cnr Julius Nyerere and Park Ln <br />
+              Monday - Saturday <br />
+              8 AM - 5 PM
+            </p>
+          </ul>
+        </div>
+        <div class="info">
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <p>© Solarpro Zimbabwe</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

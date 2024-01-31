@@ -1,0 +1,607 @@
+<!--
+    Website Designed and developed by Insignia
+    Name: INSIGNIA
+    phone: +263 71 602 7115
+    website: www.insignia.co.zw
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solarpro | Get A Quote!</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="assets/js/main.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="to-top">
+      <i class="fa-solid fa-square-caret-up"></i>
+    </div>
+    <header id="head">
+      <img
+        src="assets/images/Asset 1@4xw.png"
+        alt="Solarpro logo"
+        class="logo"
+      />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="why-us.html">Why Solarpro</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="solar-center.html">Solar Shop</a></li>
+          <li><a href="https://help.solarpro.co.zw/">Support</a></li>
+          <div class="btns">
+            <a href="Quotations.html" class="button">Get Quote</a>
+            <a href="contact.html" id="contact-btn" class="button"
+              >Contact Us</a
+            >
+          </div>
+        </ul>
+      </nav>
+      <!--Hamburger-->
+      <button id="menuToggle" class="hamburger">
+        <!--
+        A fake / hidden checkbox is used as click receiver,
+        so you can use the :checked selector on it.
+        -->
+        <input onclick="menu()" id="menu-btn" type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <!--mobile nav-->
+    <div id="mobile-nav" class="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why-us.html">Why Solarpro</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="solar-center.html">Solar Shop</a></li>
+        <li><a href="https://help.solarpro.co.zw/">Support</a></li>
+        <div class="btns">
+          <a href="Quotations.html" class="button">Get Quote</a>
+          <a href="contact.html" id="contact-btn" class="button">Contact Us</a>
+        </div>
+      </ul>
+    </div>
+
+    <main>
+      <!--contacts-->
+      <section id="pricing" class="contacts">
+        <div class="contact">
+          <h1>SolarPro</h1>
+          <h6>Giving you long term solutions without breaking the bank.</h6>
+        </div>
+      </section>
+      <section class="featured-products">
+        <h1>Featured</h1>
+        <div class="card-container">
+          <div class="card">
+            <div class="head">
+              <h4>1KW System</h4>
+            </div>
+            <div class="prices">
+              <div class="price">
+                <p>
+                  Rent From: <span class="cost">$44</span>
+                  <span class="period">per month</span>
+                </p>
+              </div>
+              <div class="price">
+                <p>Own From: <span class="cost">$845</span></p>
+              </div>
+            </div>
+            <div class="specs">
+              <h6>Specs</h6>
+              <p>
+                <i class="fa-solid fa-bolt"></i> <span>2.2KWh</span> Daily
+                production
+              </p>
+              <p>
+                <i class="fa-solid fa-car-battery"></i>
+                <span>1.02KWh</span> Battery
+              </p>
+              <p>
+                <i class="fa-solid fa-solar-panel"></i> <span>1</span> Solar
+                panel
+              </p>
+              <p>
+                <i class="fa-solid fa-shield"></i> <span>1</span> Years Warranty
+              </p>
+            </div>
+            <a href="#" class="button">Order Now</a>
+          </div>
+
+          <div id="card">
+            <div class="card">
+              <div class="head">
+                <h4>3KW System</h4>
+              </div>
+              <div class="prices">
+                <div class="price">
+                  <p>
+                    Rent From: <span class="cost">$96</span>
+                    <span class="period">per month</span>
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Own From: <span class="cost">$1850</span></p>
+                </div>
+              </div>
+              <div class="specs">
+                <h6>Specs</h6>
+                <p>
+                  <i class="fa-solid fa-bolt"></i> <span>4.6KWh</span> Daily
+                  production
+                </p>
+                <p>
+                  <i class="fa-solid fa-car-battery"></i>
+                  <span>2.7KWh</span> Battery
+                </p>
+                <p>
+                  <i class="fa-solid fa-solar-panel"></i> <span>2</span> Solar
+                  panels
+                </p>
+                <p>
+                  <i class="fa-solid fa-shield"></i> <span>3</span> Years
+                  Warranty
+                </p>
+              </div>
+              <a href="#" class="button">Order Now</a>
+            </div>
+            <div class="best">
+              <p>Best Seller</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="head">
+              <h4>5KW System</h4>
+            </div>
+            <div class="prices">
+              <div class="price">
+                <p>
+                  Rent From: <span class="cost">$173</span>
+                  <span class="period">per month</span>
+                </p>
+              </div>
+              <div class="price">
+                <p>Own From: <span class="cost">$3350</span></p>
+              </div>
+            </div>
+            <div class="specs">
+              <h6>Specs</h6>
+              <p>
+                <i class="fa-solid fa-bolt"></i> <span>18KWh</span> Daily
+                production
+              </p>
+              <p>
+                <i class="fa-solid fa-car-battery"></i>
+                <span>5.4KWh</span> Battery
+              </p>
+              <p>
+                <i class="fa-solid fa-solar-panel"></i> <span>6</span> Solar
+                panels
+              </p>
+              <p>
+                <i class="fa-solid fa-shield"></i> <span>5</span> Years Warranty
+              </p>
+            </div>
+            <a href="#" class="button">Order Now</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="all-products">
+        <h3>All Products</h3>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>System</th>
+                <th>Cash Price ($)</th>
+                <th>Deposit ($)</th>
+                <th>3 Months (USD/Month)</th>
+                <th>6 Months (USD/Month)</th>
+                <th>9 Months (USD/Month)</th>
+                <th>12 Months (USD/Month)</th>
+                <th>Number of Panels</th>
+                <th>Daily Production (KWh)</th>
+                <th>Battery (KWh)</th>
+                <th>Warranty (Years)</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="System">1KW</td>
+                <td data-label="Cash Price (USD)">850.00</td>
+                <td data-label="Deposit">423.00</td>
+                <td data-label="3 Months (USD/month)">149.00</td>
+                <td data-label="6 Months (USD/month)">79.00</td>
+                <td data-label="9 Months (USD/month)">55.00</td>
+                <td data-label="12 Months (USD/month)">44.00</td>
+                <td data-label="No. of Panels">1</td>
+                <td data-label="Daily Production (KWh)">2.2</td>
+                <td data-label="Battery Capacity(KWh)">1.024</td>
+                <td data-label="Warranty (years)">3</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">3KW</td>
+                <td data-label="Cash Price (USD)">1,850.00</td>
+                <td data-label="Deposit">925.00</td>
+                <td data-label="3 Months (USD/month)">327.00</td>
+                <td data-label="6 Months (USD/month)">173.00</td>
+                <td data-label="9 Months (USD/month)">121.00</td>
+                <td data-label="12 Months (USD/month)">96.00</td>
+                <td data-label="No. of Panels">2</td>
+                <td data-label="Daily Production (KWh)">4.56</td>
+                <td data-label="Battery Capacity (KWh)">2.71</td>
+                <td data-label="Warranty (years)">3</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">3KW</td>
+                <td data-label="Cash Price (USD)">2,850.00</td>
+                <td data-label="Deposit">1,425.00</td>
+                <td data-label="3 Months (USD/month)">504.00</td>
+                <td data-label="6 Months (USD/month)">266.00</td>
+                <td data-label="9 Months (USD/month)">187.00</td>
+                <td data-label="12 Months (USD/month)">147.00</td>
+                <td data-label="No. of Panels">4</td>
+                <td data-label="Daily Production (KWh)">9.36</td>
+                <td data-label="Battery Capacity">5.42</td>
+                <td data-label="Warranty (years)">3</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">3KW</td>
+                <td data-label="Cash Price (USD)">3,150.00</td>
+                <td data-label="Deposit">1,575.00</td>
+                <td data-label="3 Months (USD/month)">557.00</td>
+                <td data-label="6 Months (USD/month)">294.00</td>
+                <td data-label="9 Months (USD/month)">207.00</td>
+                <td data-label="12 Months (USD/month)">163.00</td>
+                <td data-label="No. of Panels">6</td>
+                <td data-label="Daily Production">18</td>
+                <td data-label="Battery Capacity">5</td>
+                <td data-label="Warranty (years)">3</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">5KW</td>
+                <td data-label="Cash Price (USD)">3,350.00</td>
+                <td data-label="Deposit">1,675.00</td>
+                <td data-label="3 Months (USD/month)">592.00</td>
+                <td data-label="6 Months (USD/month)">313.00</td>
+                <td data-label="9 Months (USD/month)">220.00</td>
+                <td data-label="12 Months (USD/month)">173.00</td>
+                <td data-label="No. of Panels">6</td>
+                <td data-label="Daily Production">18</td>
+                <td data-label="Battery Capacity">5.43</td>
+                <td data-label="Warranty (years)">5</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">5KW</td>
+                <td data-label="Cash Price (USD)">6,120.00</td>
+                <td data-label="Deposit">3,060.00</td>
+                <td data-label="3 Months (USD/month)">1,081.00</td>
+                <td data-label="6 Months (USD/month)">571.00</td>
+                <td data-label="9 Months (USD/month)">401.00</td>
+                <td data-label="12 Months (USD/month)">442.00</td>
+                <td data-label="No. of Panels">10</td>
+                <td data-label="Daily Production">24</td>
+                <td data-label="Battery Capacity">8</td>
+                <td data-label="Warranty (years)">10</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">6KW</td>
+                <td data-label="Cash Price (USD)">8,540.00</td>
+                <td data-label="Deposit">4,270.00</td>
+                <td data-label="3 Months (USD/month)">1,509.00</td>
+                <td data-label="6 Months (USD/month)">797.00</td>
+                <td data-label="9 Months (USD/month)">560.00</td>
+                <td data-label="12 Months (USD/month)">615.00</td>
+                <td data-label="No. of Panels">16</td>
+                <td data-label="Daily Production">35</td>
+                <td data-label="Battery Capacity">10</td>
+                <td data-label="Warranty (years)">10</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">10KW</td>
+                <td data-label="Cash Price (USD)">15,280.00</td>
+                <td data-label="Deposit">4,584.00</td>
+                <td data-label="3 Months (USD/month)">3,779.00</td>
+                <td data-label="6 Months (USD/month)">1,997.00</td>
+                <td data-label="9 Months (USD/month)">1,402.00</td>
+                <td data-label="12 Months (USD/month)">1,104.00</td>
+                <td data-label="No. of Panels">28</td>
+                <td data-label="Daily Production">59</td>
+                <td data-label="Battery Capacity">20</td>
+                <td data-label="Warranty (years)">10</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">15KW</td>
+                <td data-label="Cash Price (USD)">20,030.00</td>
+                <td data-label="Deposit">6,009.00</td>
+                <td data-label="3 Months (USD/month)">4,954.00</td>
+                <td data-label="6 Months (USD/month)">2,617.00</td>
+                <td data-label="9 Months (USD/month)">1,838.00</td>
+                <td data-label="12 Months (USD/month)">1,447.00</td>
+                <td data-label="No. of Panels">36</td>
+                <td data-label="Daily Production">77</td>
+                <td data-label="Battery Capacity">25</td>
+                <td data-label="Warranty (years)">10</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">25KW</td>
+                <td data-label="Cash Price (USD)">26,440.00</td>
+                <td data-label="Deposit">7,932.00</td>
+                <td data-label="3 Months (USD/month)">6,539.00</td>
+                <td data-label="6 Months (USD/month)">3,455.00</td>
+                <td data-label="9 Months (USD/month)">2,427.00</td>
+                <td data-label="12 Months (USD/month)">1,910.00</td>
+                <td data-label="No. of Panels">48</td>
+                <td data-label="Daily Production">102</td>
+                <td data-label="Battery Capacity">48</td>
+                <td data-label="Warranty (years)">10</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">50KW</td>
+                <td data-label="Cash Price (USD)">51,700.00</td>
+                <td data-label="Deposit">15,510.00</td>
+                <td data-label="3 Months (USD/month)">12,787.00</td>
+                <td data-label="6 Months (USD/month)">6,755.00</td>
+                <td data-label="9 Months (USD/month)">4,745.00</td>
+                <td data-label="12 Months (USD/month)">3,738.00</td>
+                <td data-label="No. of Panels">94</td>
+                <td data-label="Daily Production">201</td>
+                <td data-label="Battery Capacity">96</td>
+                <td data-label="Warranty (years)">10</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">75KW</td>
+                <td data-label="Cash Price (USD)">77,410.00</td>
+                <td data-label="Deposit">23,223.00</td>
+                <td data-label="3 Months (USD/month)">19,146.00</td>
+                <td data-label="6 Months (USD/month)">10,115.00</td>
+                <td data-label="9 Months (USD/month)">7,104.00</td>
+                <td data-label="12 Months (USD/month)">5,597.00</td>
+                <td data-label="No. of Panels">140</td>
+                <td data-label="Daily Production">300</td>
+                <td data-label="Battery Capacity">144</td>
+                <td data-label="Warranty (years)">10</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">100KW</td>
+                <td data-label="Cash Price (USD)">103,340.00</td>
+                <td data-label="Deposit">31,002.00</td>
+                <td data-label="3 Months (USD/month)">25,559.00</td>
+                <td data-label="6 Months (USD/month)">13,503.00</td>
+                <td data-label="9 Months (USD/month)">9,484.00</td>
+                <td data-label="12 Months (USD/month)">7,473.00</td>
+                <td data-label="No. of Panels">190</td>
+                <td data-label="Daily Production (KWh)">406</td>
+                <td data-label="Battery Capacity (KWh)">192</td>
+                <td data-label="Warranty (years)">10</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">125KW</td>
+                <td data-label="Cash Price (USD)">128,980.00</td>
+                <td data-label="Deposit">38,694.00</td>
+                <td data-label="3 Months (USD/month)">31,901.00</td>
+                <td data-label="6 Months (USD/month)">16,853.00</td>
+                <td data-label="9 Months (USD/month)">11,837.00</td>
+                <td data-label="12 Months (USD/month)">9,328.00</td>
+                <td data-label="No. of Panels">236</td>
+                <td data-label="Daily Production">500</td>
+                <td data-label="Battery Capacity (KWh)">240</td>
+                <td data-label="Warranty (years)">10</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">150KW</td>
+                <td data-label="Cash Price (USD)">154,630.00</td>
+                <td data-label="Deposit">46,389.00</td>
+                <td data-label="3 Months (USD/month)">38,245.00</td>
+                <td data-label="6 Months (USD/month)">20,205.00</td>
+                <td data-label="9 Months (USD/month)">14,192.00</td>
+                <td data-label="12 Months (USD/month)">11,183.00</td>
+                <td data-label="No. of Panels">282</td>
+                <td data-label="Daily Production">600</td>
+                <td data-label="Battery Capacity (KWh)">288</td>
+                <td data-label="Warranty (years)">10</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">175KW</td>
+                <td data-label="Cash Price (USD)">175,150.00</td>
+                <td data-label="Deposit">52,545.00</td>
+                <td data-label="3 Months (USD/month)">43,320.00</td>
+                <td data-label="6 Months (USD/month)">22,886.00</td>
+                <td data-label="9 Months (USD/month)">16,075.00</td>
+                <td data-label="12 Months (USD/month)">12,668.00</td>
+                <td data-label="No. of Panels">330</td>
+                <td data-label="Daily Production">708</td>
+                <td data-label="Battery Capacity (KWh)">336</td>
+                <td data-label="Warranty (years)">10</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">200KW</td>
+                <td data-label="Cash Price (USD)">206,200</td>
+                <td data-label="Deposit">61,860.00</td>
+                <td data-label="3 Months (USD/month)">51,000.00</td>
+                <td data-label="6 Months (USD/month)">26,944.00</td>
+                <td data-label="9 Months (USD/month)">18,925.00</td>
+                <td data-label="12 Months (USD/month)">14,914.00</td>
+                <td data-label="No. of Panels">380</td>
+                <td data-label="Daily Production">814</td>
+                <td data-label="Battery Capacity (KWh)">384</td>
+                <td data-label="Warranty (years)">10</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">225KW</td>
+                <td data-label="Cash Price (USD)">232,000.00</td>
+                <td data-label="Deposit">69,600.00</td>
+                <td data-label="3 Months (USD/month)">57,381.00</td>
+                <td data-label="6 Months (USD/month)">30,315.00</td>
+                <td data-label="9 Months (USD/month)">21,292.00</td>
+                <td data-label="12 Months (USD/month)">15,526.00</td>
+                <td data-label="No. of Panels">426</td>
+                <td data-label="Daily Production">915</td>
+                <td data-label="Battery Capacity (KWh)">432</td>
+                <td data-label="Warranty (years)">10</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+              <tr>
+                <td data-label="System">250KW</td>
+                <td data-label="Cash Price (USD)">254,778.00</td>
+                <td data-label="Deposit">76,434.00</td>
+                <td data-label="3 Months (USD/month)">63,015.00</td>
+                <td data-label="6 Months (USD/month)">33,291.00</td>
+                <td data-label="9 Months (USD/month)">23,383.00</td>
+                <td data-label="12 Months (USD/month)">18,425.00</td>
+                <td data-label="No. of Panels">478</td>
+                <td data-label="Daily Production">1018</td>
+                <td data-label="Battery Capacity (KWh)">480</td>
+                <td data-label="Warranty (years)">10</td>
+                <td><a href="#" class="button">Order Now</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <div class="newsletter">
+        <div class="input">
+          <span
+            ><i class="fa-solid fa-envelope"></i> Stay up to date with the
+            latest at Solarpro</span
+          >
+          <form action="#">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <input type="submit" value="Subscribe" class="btn" />
+          </form>
+        </div>
+        <div class="footy-logo">
+          <img
+            src="assets/images/Solar pro White.png"
+            alt="solarpro logo"
+            class="logo"
+          />
+        </div>
+      </div>
+      <div class="footy-info">
+        <div class="socials">
+          <h6>Solapro</h6>
+          <div class="links">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/techhubharare"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/techhubharare/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/HarareHub"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://wa.me/263718924393"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="info">
+          <span>Home</span>
+          <ul>
+            <p><a href="#about">About Us</a></p>
+            <p><a href="why-us.html">Why Solarpro?</a></p>
+            <p><a href="https://help.solarpro.co.zw/">Support</a></p>
+            <p>
+              <a href="https://mysolarpro.glide.page/dl/a400f7">My Solarpro</a>
+            </p>
+          </ul>
+        </div>
+        <div class="info">
+          <span>Contact Us</span>
+          <ul>
+            <p>Solarprozimbabwe@brieftech.co.zw</p>
+            <p>+263 71 892 4393</p>
+            <p><a href="https://wa.me/263718924393">Whatsapp Chat</a></p>
+            <p>
+              Solarpro Shop, <br />
+              Shop no.1 SSC Building <br />
+              Cnr Julius Nyerere and Park Ln <br />
+              Monday - Saturday <br />
+              8 AM - 5 PM
+            </p>
+          </ul>
+        </div>
+        <div class="info">
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <p>© Solarpro Zimbabwe</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
