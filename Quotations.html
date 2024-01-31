@@ -200,29 +200,47 @@
                   12kva 3ph / 21.72kwh / 9240w Single Phase 5 yr
                 </option></select
               ><br /><br />
-
               <label>Payment Period:</label><br />
-              <input
-                type="radio"
-                name="paymentPeriod"
-                id="months3"
-                value="2"
-                required
-              />
-              3 months
-              <input type="radio" name="paymentPeriod" id="months6" value="3" />
-              6 months
-              <input type="radio" name="paymentPeriod" id="months9" value="4" />
-              9 months
-              <input
-                type="radio"
-                name="paymentPeriod"
-                id="months12"
-                value="5"
-              />
-              12 months<br /><br />
-
-              <button type="button" onclick="calculate()">Calculate</button>
+              <div class="centered">
+                <div class="period">
+                  <label for="month3">3 Months</label>
+                  <input
+                    type="radio"
+                    name="paymentPeriod"
+                    id="months3"
+                    value="3"
+                    required
+                  />
+                </div>
+                <div class="period">
+                  <label for="month6">6 Months</label>
+                  <input
+                    type="radio"
+                    name="paymentPeriod"
+                    id="months6"
+                    value="6"
+                  />
+                </div>
+                <div class="period">
+                  <label for="month9">9 Months</label>
+                  <input
+                    type="radio"
+                    name="paymentPeriod"
+                    id="months9"
+                    value="9"
+                  />
+                </div>
+                <div class="period">
+                  <label for="month12">12 Months</label>
+                  <input
+                    type="radio"
+                    name="paymentPeriod"
+                    id="months12"
+                    value="12"
+                  />
+                </div>
+                <button type="button" onclick="calculate()">Calculate</button>
+              </div>
             </form>
 
             <h2>Calculation Results:</h2>
@@ -253,7 +271,7 @@
             return false; // Prevent form submission
           }
 
-          const months = parseInt(selectedPeriod.value, 10); // Convert the value to an integer
+          const months = parseInt(selectedPeriod.value); // Convert the value to an integer
 
           // Define the price data for the selected system
           const systemPrices = {

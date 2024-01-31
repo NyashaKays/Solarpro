@@ -958,6 +958,27 @@ font-size: 1.5rem;
     align-items: center;
 }
 
+#enquiry form label{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.centered{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.centered .period{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 15px;
+}
+
 .form-container{
     display: flex;
     align-items: center;
