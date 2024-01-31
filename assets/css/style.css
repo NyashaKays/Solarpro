@@ -975,7 +975,7 @@ font-size: 1.5rem;
 }
 .form-container form{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     gap: 5px;

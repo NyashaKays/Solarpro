@@ -38,6 +38,9 @@
     <script src="assets/js/main.js" type="text/javascript"></script>
   </head>
   <body>
+    <div id="to-top">
+      <i class="fa-solid fa-square-caret-up"></i>
+    </div>
     <header id="head">
       <img
         src="assets/images/Asset 1@4xw.png"
@@ -59,7 +62,39 @@
           </div>
         </ul>
       </nav>
+      <!--Hamburger-->
+      <button id="menuToggle" class="hamburger">
+        <!--
+              A fake / hidden checkbox is used as click receiver,
+              so you can use the :checked selector on it.
+              -->
+        <input onclick="menu()" id="menu-btn" type="checkbox" />
+
+        <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
+    <!--mobile nav-->
+    <div id="mobile-nav" class="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why-us.html">Why Solarpro</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="solar-center.html">Solar Shop</a></li>
+        <li><a href="https://help.solarpro.co.zw/">Support</a></li>
+        <div class="btns">
+          <a href="Quotations.html" class="button">Get Quote</a>
+          <a href="contact.html" id="contact-btn" class="button">Contact Us</a>
+        </div>
+      </ul>
+    </div>
 
     <!--main-->
     <main>
